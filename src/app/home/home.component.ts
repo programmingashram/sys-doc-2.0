@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 import { TreeNode } from 'sysdesign2023';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
-  title = 'sys-2.0';
+export class HomeComponent {
   nodes: TreeNode[] = [
     {
       label: 'Components',
@@ -22,13 +20,6 @@ export class AppComponent {
     },
 
   ];
-  formGroup!: FormGroup;
-  theme!: FormControl;
-  ngOnInit(){
-    this.formGroup = new FormGroup({
-      // theme : new FormControl({}),
-    });
-  }
 
   sun: boolean  = true
   moon: boolean = false
@@ -48,5 +39,4 @@ export class AppComponent {
   }
 
   }
-
 }

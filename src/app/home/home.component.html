@@ -1,0 +1,111 @@
+<article class="mt-5">
+  <div class="sys-container">
+    <div class="sys-grid">
+        <div class="col-md-4">
+          <sys-card title="UX Support" subTitle="Based on Figma" [horigentalCard]="true">
+            <sys-card-content>
+
+            </sys-card-content>
+            <sys-card-action>
+              <img src="../assets/🦆 icon _Figma_.svg" alt="" style="width: 50%;">
+            </sys-card-action>
+          </sys-card>
+        </div>
+         <div class="col-md-4">
+          <sys-card title="UI Support" subTitle="Based on Angular" [horigentalCard]="true">
+            <sys-card-content>
+
+            </sys-card-content>
+            <sys-card-action>
+              <img src="../assets/🦆 icon _Angular_.svg" alt="" style="width: 50%;">
+            </sys-card-action>
+          </sys-card>
+        </div>
+         <div class="col-md-4">
+          <sys-card title="Bug Support" subTitle="Based on Front end Lang" [horigentalCard]="true">
+            <sys-card-content>
+
+            </sys-card-content>
+            <sys-card-action>
+              <img src="../assets/🦆 icon _Bug_.svg" alt="" style="width: 50%;">
+            </sys-card-action>
+          </sys-card>
+        </div>
+    </div>
+  </div>
+</article>
+
+<article class="mt-4 themeSection">
+  <div class="sys-container">
+      <div class="sys-grid align-i-center">
+        <div class="col-md-4">
+          <img src="../assets/Group 4.svg" alt="" class="w-100">
+        </div>
+        <div class="col-md-4">
+          <div class="text-center">
+            <img src="../assets/🦆 icon _Brush_.svg" alt="">
+            <h6 class="mt-2">Customize the theme accordion to your Design</h6>
+            <div class="flex justify-c-center mt-3">
+                <sys-button icon="published_with_changes" [iconBtn]="true" (click)="onSubmit()"></sys-button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="../assets/Frame 10.svg" alt="" class="w-100">
+        </div>
+      </div>
+  </div>
+</article>
+
+<article class="mt-5">
+  <div class="sys-container-lg">
+    <div class="sys-grid">
+        <div class="col-md-4">
+          <sys-card title="Button" [divider]="true" subTitle="Default, Outline, Icon">
+            <sys-card-content>
+                <div class="flex mt-3 mb-3 justify-c-center">
+                  <sys-button icon="local_fire_department">Sys Button</sys-button>
+
+                </div>
+                <div class="text-center">
+                    <div class="flex gap-sm justify-c-center">
+                      <sys-button icon="add" [iconBtn]="true"></sys-button>
+                      <sys-button icon="add" [iconBtn]="true" color="accent"></sys-button>
+                      <sys-button icon="delete" [iconBtn]="true" class="textBtn" color="accent"></sys-button>
+                    </div>
+                </div>
+            </sys-card-content>
+          </sys-card>
+        </div>
+         <div class="col-md-4">
+          <sys-card title="Tree" [divider]="true" subTitle="Default, With custom Icon">
+            <sys-card-content>
+              <div class="p-2">
+                  <div class="flex justify-c-center">
+                    <sys-tree [nodes]="nodes"></sys-tree>
+                  </div>
+              </div>
+            </sys-card-content>
+          </sys-card>
+        </div>
+         <div class="col-md-4">
+          <sys-card title="Slide Toggle" [divider]="true" subTitle="Toggle switch">
+            <sys-card-content>
+              <div class="wrap justify-c-center align-i-center mt-3">
+                <sys-slide type="checkbox" [divider]="true" label="Enable Wifi" [switchCard]="true" [selected]="true"></sys-slide>
+
+                <sys-slide type="checkbox" [divider]="true" [accent]="true" label="Notofication" [switchCard]="true" [selected]="true"></sys-slide>
+              </div>
+            </sys-card-content>
+          </sys-card>
+        </div>
+    </div>
+  </div>
+  <div class="flex justify-c-center mt-3">
+    <sys-button icon="local_fire_department">Go To Docs</sys-button>
+  </div>
+</article>
+<img src="../assets/sun-png-5481.png" alt="" class="sun illustrat" id="sun" *ngIf="!moon && sun">
+
+<img src="../assets/58f9febe0ed2bdaf7c128330 (1).png" alt="" class="moon illustrat" id="moon" *ngIf="moon && !sun">
