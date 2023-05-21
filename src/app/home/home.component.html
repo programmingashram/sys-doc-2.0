@@ -102,9 +102,68 @@
         </div>
     </div>
   </div>
-  <div class="flex justify-c-center mt-3">
-    <sys-button icon="local_fire_department">Go To Docs</sys-button>
-  </div>
+
+</article>
+
+<article class="mt-5 mb-5">
+  <div class="mt-4">
+    <div class="sys-container">
+      <div class="sys-row">
+          <div class="col-md-3">
+            <sys-card title="Typography" icon="text_fields" [flatImage]="true" subTitle="Font size, weight and more.." cardImg="https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/02/94_ui_design_tools_illustration_blog.jpg">
+              <sys-card-content>
+
+              </sys-card-content>
+              <sys-card-action>
+                <sys-button icon="check" class="textBtn" color="secondary" routerLink="/typo">
+                  Read now
+                </sys-button>
+              </sys-card-action>
+            </sys-card>
+          </div>
+          <div class="col-md-3">
+            <sys-card title="Uilities"  [flatImage]="true" subTitle="Colors, backgrounds, flex..." icon="bubble_chart" cardImg="https://uploads-ssl.webflow.com/6023fdfa97944f09d6a27ac6/643472b914a8f57a11ae98bf_public%20utility%20main.jpg">
+              <sys-card-content>
+
+              </sys-card-content>
+              <sys-card-action>
+                <sys-button icon="check" class="textBtn" color="secondary">
+                  Read now
+                </sys-button>
+              </sys-card-action>
+            </sys-card>
+          </div>
+          <div class="col-md-3">
+            <sys-card title="Components"  [flatImage]="true" subTitle="Tree, cards, Buttons..." icon="widgets" cardImg="https://www.qed42.com/sites/default/files/styles/featured_image/public/2022-05/6%20Purposeful%20Illustration%20Systems%20for%20Everyone%203-min.png?itok=G3k4rbJT">
+              <sys-card-content>
+
+              </sys-card-content>
+              <sys-card-action>
+                <sys-button icon="check" class="textBtn" color="secondary">
+                  Read now
+                </sys-button>
+              </sys-card-action>
+            </sys-card>
+          </div>
+           <div class="col-md-3">
+            <sys-card title="Layouts"  [flatImage]="true" subTitle="Grid, column, container..." icon="grid_4x4" cardImg="https://blog.shiftasia.com/content/images/2022/12/Screen-Shot-2022-12-02-at-10.48.47-1.png">
+              <sys-card-content>
+
+              </sys-card-content>
+              <sys-card-action>
+                <sys-button icon="check" class="textBtn" color="secondary">
+                  Read now
+                </sys-button>
+              </sys-card-action>
+            </sys-card>
+          </div>
+      </div>
+    </div>
+    <div class="flex justify-c-center mt-3">
+      <sys-button icon="local_fire_department" routerLink="/docs">Getting Started</sys-button>
+    </div>
+</div>
+
 </article>
 <img src="https://raw.githubusercontent.com/programmingashram/sys-doc-2.0/master/src/assets/sun-png-5481.png" alt="" class="sun illustrat" id="sun" *ngIf="!moon && sun">
 

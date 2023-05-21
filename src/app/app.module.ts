@@ -8,11 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { sysDesignModule } from 'sysdesign2023';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { DocHeilightsComponent } from './doc-heilights/doc-heilights.component';
+import { TypoComponent } from './typo/typo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DocHeilightsComponent,
+    TypoComponent
   ],
   imports: [
     BrowserModule,

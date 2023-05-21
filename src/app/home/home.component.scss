@@ -18,6 +18,14 @@
   border-radius: 100%;
 }
 
+::ng-deep{
+  .cardImg{
+    img{
+      height: 176px;
+      object-fit: cover;
+    }
+  }
+}
 
 .moon{
   position: fixed;
